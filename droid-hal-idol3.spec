@@ -9,6 +9,24 @@
 
 %define installable_zip 1
 
+%define straggler_files \
+/bugreports\
+/d\
+/file_contexts.bin\
+/init.tct.variant.sh\
+/property_contexts\
+/sdcard\
+/selinux_version\
+/service_contexts\
+/vendor\
+%{nil}
+
+%define android_config \
+#define QCOM_BSP 1 \
+#define QTI_BSP 1 \
+#define WANT_ADRENO_QUIRKS 1 \
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
