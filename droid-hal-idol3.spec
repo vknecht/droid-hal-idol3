@@ -4,9 +4,6 @@
 %define device idol3
 %define vendor TCL
 
-%define vendor_pretty Alcatel
-%define device_pretty Idol 3 (5.5)
-
 %define installable_zip 1
 %define enable_kernel_update 1
 
