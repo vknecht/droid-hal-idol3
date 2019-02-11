@@ -7,10 +7,7 @@
 %define installable_zip 1
 %define enable_kernel_update 1
 
-%define makefstab_skip_entries /dev/bfqio
-%define makefstab_skip_entries /dev/cpuctl
-%define makefstab_skip_entries /dev/cpuset
-%define makefstab_skip_entries /dev/stune
+%define makefstab_skip_entries /dev/bfqio /dev/cpuctl /dev/cpuset /dev/stune
 
 %define straggler_files \
 /bugreports\
